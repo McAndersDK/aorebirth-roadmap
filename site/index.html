@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AORebirth Roadmap</title>
+  <meta name="description" content="What works on the AORebirth server today, and what is coming next, for Rubi-Ka and every expansion.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='12' fill='none' stroke='%23d4af37' stroke-width='4'/><circle cx='16' cy='16' r='4' fill='%23d4af37'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">AORebirth server</p>
+      <h1>Roadmap</h1>
+      <p class="lede">What already works on the server, what is being tested, and what is still to come, for Rubi-Ka
+        and each expansion.</p>
+      <div class="overall" id="overall" hidden>
+        <div class="overall-num"><span id="overall-pct">0</span><small>%</small></div>
+        <div class="overall-text">
+          <strong>overall progress</strong>
+          <span id="overall-counts"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="scopes" id="scopes" aria-label="Expansions"></section>
+
+    <section class="recent" id="recent-wrap" hidden>
+      <h2>Recently updated</h2>
+      <ol class="recent-list" id="recent"></ol>
+    </section>
+
+    <section class="controls" aria-label="Filters">
+      <input type="search" id="search" placeholder="Search features, e.g. pets, perks, Jobe ..." aria-label="Search features">
+      <div class="chips" id="chips"></div>
+    </section>
+
+    <section id="detail"></section>
+    <p class="empty" id="empty" hidden>No features match.</p>
+  </main>
+
+  <footer class="wrap foot">
+    <p id="generated"></p>
+    <p>Progress counts <em>In testing</em> as 90%, <em>Partly working</em> as 50% and <em>In development</em> as 25%.
+      Feature lists for the expansions follow <a href="https://wiki.aodb.us/wiki/Category:Expansions">wiki.aodb.us</a>.
+      <a href="https://github.com/McAndersDK/aorebirth-roadmap">Tracked on GitHub</a>.</p>
+  </footer>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>
